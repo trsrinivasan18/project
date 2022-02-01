@@ -1,0 +1,1092 @@
+     /*Root*/
+     
+     * {
+         margin: 0px;
+         padding: 0;
+         overflow-x: hidden;
+         box-sizing: border-box;
+         scroll-behavior: smooth;
+     }
+     
+     body {
+         background-image: linear-gradient(to left, gainsboro, white);
+     }
+     /*Loader */
+     
+     .preload {
+         background: white url("./b_gif.gif")no-repeat center;
+         background-size: 20%;
+         height: 100vh;
+         width: 100%;
+         position: fixed;
+         z-index: 100;
+     }
+     /*Loader Label*/
+     
+     .preload #load_content {
+         font-size: 50px;
+         color: #FC8A17;
+         font-family: 'Fleur De Leah', cursive;
+         word-spacing: 16px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 400px;
+     }
+     /*navbar start*/
+     
+     .navbar_container {
+         height: 50px;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         background-color: transparent;
+         position: relative;
+         position: absolute;
+         bottom: 610px;
+         top: 0px;
+         z-index: 1;
+     }
+     
+     .nav_logo img {
+         height: 40px;
+         width: 80px;
+         border-radius: 18px;
+         padding-top: 5px;
+         padding-left: 5px;
+         opacity: 1.3;
+     }
+     
+     .nav_label {
+         font-size: 35px;
+         font-family: 'Fleur De Leah', cursive;
+         color: #FC8A17;
+         word-spacing: 6px;
+         padding-right: 60px;
+     }
+     
+     .nav_items ul li {
+         display: inline-block;
+         padding: 3px 50px 5px 60px;
+     }
+     
+     .nav_items a {
+         font-size: 25px;
+         text-decoration: none;
+         color: #FC8A17;
+         font-family: 'Fleur De Leah', cursive;
+     }
+     
+     .nav_items a:hover {
+         color: #F7F7F7;
+         transition: 1s all;
+     }
+     
+     #home:active {
+         color: red;
+         background-color: yellow;
+     }
+     /*navbar end*/
+     /*navbar toggeling start*/
+     
+     .slidemenu {
+         position: fixed;
+         top: 50px;
+         left: 3px;
+         height: 100%;
+         width: 0px;
+         background-color: #1A1A1A;
+         padding-top: 100px;
+         overflow-x: hidden;
+         transition: 0.8s;
+         z-index: 1;
+     }
+     
+     .slidemenu a {
+         padding: 30px 8px 8px 100px;
+         text-decoration: none;
+         font-size: 20px;
+         display: block;
+         color: orange;
+         font-family: 'Qwitcher Grypen', cursive;
+     }
+     
+     .slidemenu a:hover {
+         color: white;
+     }
+     
+     .slidemenu .closebtn {
+         position: absolute;
+         top: 0px;
+         right: 25px;
+         font-size: 35px;
+         margin-left: 30px;
+     }
+     
+     .main {
+         color: orange;
+         font-size: 30px;
+         cursor: pointer;
+         padding-top: 3px;
+         display: none;
+     }
+     /*navbar toggeling end*/
+     /*icon adjust*/
+     
+     #fy {
+         position: relative;
+         left: 10px;
+         top: 2px;
+     }
+     
+     #ic {
+         position: relative;
+         left: 10px;
+         top: 2px;
+         font-size: 20px;
+     }
+     /* The dots/bullets/indicators */
+     
+     .dot {
+         height: 15px;
+         width: 15px;
+         margin: 0px 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+     }
+     
+     .active,
+     .dot:hover {
+         background-color: #FC8A17;
+     }
+     
+     #dotslider {
+         position: relative;
+         bottom: 37px;
+     }
+     /*Slider content*/
+     
+     .slider_content {
+         color: #FC8A17;
+         position: absolute;
+         position: relative;
+         bottom: 700px;
+         left: 50px;
+         font-family: 'Fleur De Leah', cursive;
+         font-size: 36px;
+         word-spacing: 20px;
+         max-width: 550px;
+         font-weight: 50px;
+         animation: vv;
+         animation-duration: 3s;
+         animation-fill-mode: forwards;
+         overflow: hidden;
+     }
+     
+     .slider_content .secc {
+         margin-top: 40px;
+         font-size: 30px;
+         max-width: 400px;
+         margin-left: 60px;
+     }
+     
+     .slider_content .book_now_btn button {
+         cursor: pointer;
+         border: 2px solid #FC8A17;
+         border-radius: 10px;
+         height: 30px;
+         width: 100px;
+         background-color: #FC8A17;
+         color: white;
+         font-size: 17px;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: 180px;
+         margin-top: 50px;
+     }
+     
+     @keyframes vv {
+         from {
+             position: relative;
+             bottom: 0px;
+         }
+         to {
+             bottom: 650px;
+         }
+     }
+     
+     span {
+         color: white;
+     }
+     
+     #myInput {
+         width: 800px;
+         font-size: 20px;
+         padding: 12px 20px 12px 40px;
+         border: 3px solid #FC8A17;
+         color: #FC8A17;
+         font-family: 'Fleur De Leah', cursive;
+         border-radius: 10px;
+         margin-right: 20px;
+     }
+     
+     #myInput:hover {
+         outline-color: #FC8A17;
+     }
+     
+     #myUL {
+         list-style-type: none;
+         padding: 0;
+         width: 800px;
+         margin-top: 40px;
+         margin-left: 40px;
+         display: none;
+     }
+     
+     #myUL li a {
+         border: 1px solid #FC8A17;
+         margin-top: -1px;
+         /* Prevent double borders */
+         background-color: black;
+         padding: 12px;
+         text-decoration: none;
+         font-size: 18px;
+         color: #F9A64A;
+         display: block;
+     }
+     
+     #myUL li a:hover:not(.header) {
+         background-color: black;
+         opacity: 0.9;
+     }
+     
+     #dropdown {
+         padding: 0px 12px;
+         color: #FC8A17;
+         background: transparent;
+         border: 2px solid transparent;
+         cursor: pointer;
+         border-radius: 5px;
+         outline: orange;
+         font-size: 19px;
+         font-family: 'Qwitcher Grypen', cursive;
+     }
+     
+     .search_container {
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         bottom: 440px;
+     }
+     
+     #my {
+         width: 300px;
+         font-size: 20px;
+         padding: 12px 20px 12px 40px;
+         border: 3px solid #FC8A17;
+         color: #FC8A17;
+         font-family: 'Fleur De Leah', cursive;
+         border-radius: 10px;
+         margin-right: 30px;
+         background-color: white;
+     }
+     
+     .search_label h5 {
+         font-size: 40px;
+         font-family: 'Fleur De Leah', cursive;
+         color: #FC8A17;
+         border-left: 5px solid #FC8A17;
+         padding-left: 20px;
+         margin-left: 100px;
+     }
+     
+     .genres_label h5 {
+         font-size: 30px;
+         font-family: 'Fleur De Leah', cursive;
+         color: #FC8A17;
+         border-left: 5px solid #FC8A17;
+         padding-left: 20px;
+         margin-right: 130px;
+     }
+     
+     .bar_container {
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         bottom: 400px;
+     }
+     
+     .movies {
+         margin-left: 50px;
+     }
+     
+     #search {
+         color: #FC8A17;
+         font-size: 35px;
+         position: relative;
+         left: 800px;
+         top: 15px;
+         height: 40px;
+         width: 40px;
+     }
+     
+     #close {
+         color: #FC8A17;
+         font-size: 40px;
+         text-decoration: none;
+         position: relative;
+         left: 755px;
+         top: 8px;
+         display: none;
+         cursor: pointer;
+     }
+     /*
+
+
+.popular_movies_container{
+    padding: 20px;
+}
+.item_img{
+    width: 100%;
+    height: 100%;
+   
+   
+}
+.namelist{
+    display: flex;
+    align-items: center;
+   
+    
+}
+.items{
+    margin-right: 30px;
+}
+.items:hover .item_img{
+ transform: scale3d(2);
+
+}
+*/
+     /*responsive*/
+     
+     @media screen and (max-width:1300px) {
+         .nav_items ul li {
+             padding-left: 30px;
+         }
+         .preload #load_content {
+             margin-top: 380px;
+         }
+         #myInput {
+             width: 700px;
+         }
+         #search {
+             position: relative;
+             left: 700px;
+         }
+         #close {
+             position: relative;
+             left: 690px;
+         }
+         #my {
+             margin-top: 5px;
+         }
+         #myUL {
+             width: 700px;
+         }
+     }
+     
+     @media screen and (max-width:1200px) {
+         .nav_items ul li {
+             padding: 0px 40px 0px 40px;
+         }
+         .nav_label {
+             padding-right: 50px;
+         }
+         #myInput {
+             width: 650px;
+         }
+         #search {
+             position: relative;
+             left: 650px;
+         }
+         #close {
+             position: relative;
+             left: 630px;
+         }
+         #my {
+             margin-top: 5px;
+         }
+         #myUL {
+             width: 600px;
+         }
+     }
+     
+     @media screen and (max-width:1100px) {
+         #dropdown {
+             display: none;
+         }
+         .nav_label {
+             padding-right: 150px;
+         }
+         .genres_label {
+             display: none;
+         }
+         .genres {
+             display: none;
+         }
+         #myInput {
+             width: 880px;
+         }
+         #search {
+             position: relative;
+             left: 855px;
+         }
+         #close {
+             position: relative;
+             left: 830px;
+         }
+         #myUL {
+             width: 100%;
+         }
+     }
+     
+     @media screen and (max-width:1000px) {
+         .nav_label {
+             padding: 4px 20px 0px 60px;
+             font-size: 30px;
+             word-spacing: 4px;
+         }
+         .slider_content {
+             bottom: 600px;
+             animation: vv;
+             animation-duration: 3s;
+             animation-fill-mode: forwards;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 600px;
+             }
+         }
+         #myInput {
+             width: 850px;
+             margin-top: -120px;
+             margin-right: 50px;
+         }
+         #search {
+             position: relative;
+             top: 34px;
+             left: 780px;
+         }
+         #close {
+             position: relative;
+             left: 770px;
+             top: 34px;
+         }
+         #myUL {
+             width: 850px;
+             margin-left: 0px;
+         }
+     }
+     
+     @media screen and (max-width:900px) {
+         .nav_items ul li {
+             position: relative;
+             left: 50px;
+             padding-right: 20px;
+         }
+         .nav_items a {
+             font-size: 18px;
+         }
+         .slider_content {
+             bottom: 600px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 600px;
+             }
+         }
+         #myInput {
+             width: 750px;
+             margin-right: 50px;
+         }
+         #search {
+             position: relative;
+             top: 34px;
+             left: 680px;
+         }
+         #close {
+             position: relative;
+             left: 680px;
+             top: 34px;
+         }
+         #myUL {
+             width: 750px;
+             margin-left: 0px;
+         }
+         .search_label h5 {
+             font-size: 30px;
+         }
+     }
+     
+     @media screen and (max-width:800px) {
+         .nav_label {
+             font-size: 30px;
+             word-spacing: 10px;
+             width: 250px;
+         }
+         .nav_items a {
+             font-size: 15px;
+         }
+         .nav_items ul li {
+             left: 10px;
+         }
+         .nav_logo img {
+             width: 70px;
+             border-radius: 10px;
+         }
+         .slider_content {
+             bottom: 460px;
+             font-size: 27px;
+             line-height: 30px;
+         }
+         .slider_content .book_now_btn button {
+             height: 20px;
+             width: 70px;
+             font-size: 13px;
+         }
+         .slider_content .secc {
+             font-size: 23px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 460px;
+             }
+         }
+         .search_label h5 {
+             margin-top: 60px;
+         }
+         #myInput {
+             width: 500px;
+             margin-right: 50px;
+         }
+         #search {
+             position: relative;
+             top: 15px;
+             left: 500px;
+         }
+         #close {
+             position: relative;
+             left: 490px;
+             top: 5px;
+         }
+         #myUL {
+             width: 570px;
+         }
+     }
+     
+     @media screen and (max-width:700px) {
+         .preload #load_content {
+             margin-top: 300px;
+             font-size: 30px;
+         }
+         .main {
+             display: block;
+         }
+         .nav_items ul li {
+             display: none;
+         }
+         .nav_label {
+             font-size: 35px;
+             position: relative;
+             right: 130px;
+             padding-top: 2px;
+         }
+         .nav_logo {
+             padding-left: 4px;
+         }
+         .slider_content {
+             bottom: 430px;
+             font-size: 22px;
+         }
+         .slider_content .book_now_btn button {
+             height: 20px;
+             width: 70px;
+             font-size: 11px;
+             margin-top: 20px;
+         }
+         .slider_content .secc {
+             font-size: 20px;
+         }
+         .dot {
+             height: 12px;
+             width: 12px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 430px;
+             }
+         }
+         .search_label h5 {
+             margin-top: 100px;
+         }
+         #myInput {
+             width: 500px;
+             margin-right: 50px;
+         }
+         #search {
+             position: relative;
+             top: 12px;
+             left: 470px;
+         }
+         #close {
+             position: relative;
+             left: 440px;
+             top: 5px;
+         }
+         #myUL {
+             width: 570px;
+         }
+     }
+     
+     @media screen and (max-width:650px) {
+         #search {
+             position: relative;
+             top: 35px;
+             left: 450px;
+         }
+         #close {
+             position: relative;
+             left: 440px;
+             top: 20px;
+         }
+         #myUL {
+             width: 550px;
+         }
+     }
+     
+     @media screen and (max-width:600px) {
+         .nav_label {
+             right: 90px;
+         }
+         .slider_content {
+             bottom: 400px;
+             font-size: 20px;
+             word-spacing: 15px;
+             max-width: 300px;
+             left: 10px;
+         }
+         .slider_content .book_now_btn button {
+             height: 20px;
+             width: 70px;
+             font-size: 11px;
+             margin-top: 20px;
+         }
+         .slider_content .secc {
+             font-size: 13px;
+             max-width: 500px;
+             margin-top: 30px;
+             line-height: 17px;
+             margin-left: 10px;
+         }
+         .dot {
+             height: 8px;
+             width: 8px;
+         }
+         #dotslider {
+             bottom: 30px;
+         }
+         .slider_content .onec {
+             margin-top: 60px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 400px;
+             }
+         }
+         .search_label h5 {
+             margin-top: 130px;
+         }
+         #myInput {
+             width: 450px;
+             margin-right: 50px;
+         }
+         #search {
+             position: relative;
+             top: 30px;
+             left: 380px;
+         }
+         #close {
+             position: relative;
+             left: 370px;
+             top: 30px;
+         }
+         #myUL {
+             width: 450px;
+         }
+     }
+     
+     @media screen and (max-width:500px) {
+         .nav_label {
+             right: 70px;
+         }
+         .slider_content {
+             bottom: 350px;
+             font-size: 20px;
+             word-spacing: 15px;
+             max-width: 350px;
+             left: 10px;
+         }
+         .slider_content .book_now_btn button {
+             height: 15px;
+             width: 40px;
+             font-size: 6px;
+             margin-top: 20px;
+             margin-left: 120px;
+         }
+         .slider_content .secc {
+             font-size: 13px;
+             max-width: 500px;
+             margin-top: 30px;
+             line-height: 17px;
+             margin-left: 10px;
+         }
+         .dot {
+             height: 8px;
+             width: 8px;
+         }
+         #dotslider {
+             bottom: 30px;
+         }
+         .slider_content .onec {
+             margin-top: 60px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 350px;
+             }
+         }
+         .search_label h5 {
+             margin-top: 130px;
+         }
+         #myInput {
+             width: 350px;
+             margin-right: 50px;
+             font-size: 14px;
+         }
+         #search {
+             height: 29px;
+             position: relative;
+             top: 30px;
+             left: 300px;
+         }
+         #close {
+             position: relative;
+             left: 300px;
+             top: 26px;
+             font-size: 30px;
+             cursor: pointer;
+         }
+         #myUL {
+             width: 350px;
+         }
+     }
+     
+     @media screen and (max-width:400px) {
+         .preload {
+             background-size: 130px;
+         }
+         .nav_label {
+             font-size: 26px;
+             padding-top: 7px;
+             word-spacing: 0;
+             right: 30px;
+             padding-left: 50px;
+         }
+         .main {
+             font-size: 27px;
+             padding-top: 4px;
+             padding-right: 20px;
+         }
+         .nav_logo {
+             padding-right: 25px;
+             border-radius: 5px;
+         }
+         .slider_content {
+             bottom: 260px;
+             font-size: 15px;
+             word-spacing: 15px;
+             max-width: 300px;
+             left: 10px;
+         }
+         .slider_content .book_now_btn button {
+             height: 15px;
+             width: 40px;
+             font-size: 5px;
+             margin-top: 20px;
+             margin-left: 100px;
+         }
+         .slider_content .secc {
+             font-size: 10px;
+             max-width: 900px;
+             margin-top: 5px;
+             line-height: 14px;
+             margin-left: 10px;
+             word-spacing: 3px;
+         }
+         .dot {
+             height: 2px;
+             width: 2px;
+         }
+         #dotslider {
+             bottom: 30px;
+         }
+         .slider_content .onec {
+             margin-top: 60px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 260px;
+             }
+         }
+         .search_label h5 {
+             margin-top: 255px;
+             margin-left: 35px;
+             font-size: 20px;
+         }
+         #myInput {
+             width: 250px;
+             margin-right: 50px;
+             font-size: 12px;
+             padding-left: 20px;
+         }
+         #search {
+             height: 29px;
+             position: relative;
+             top: 30px;
+             left: 200px;
+         }
+         #close {
+             position: relative;
+             left: 200px;
+             top: 26px;
+             font-size: 30px;
+             cursor: pointer;
+         }
+         #myUL {
+             width: 250px;
+         }
+     }
+     
+     @media screen and (max-width:300px) {
+         .preload #load_content {
+             font-size: 27px;
+         }
+         .nav_label {
+             display: none;
+         }
+         .main {
+             position: relative;
+             left: 50px;
+         }
+         .slider_content {
+             word-spacing: 0px;
+             bottom: 180px;
+             font-size: 9px;
+             max-width: 400px;
+             left: 10px;
+         }
+         .slider_content .book_now_btn button {
+             height: 10px;
+             width: 30px;
+             font-size: 5px;
+             margin-top: 5px;
+             margin-left: 60px;
+         }
+         .slider_content .secc {
+             font-size: 7px;
+             max-width: 1000px;
+             margin-top: 5px;
+             line-height: 10px;
+             margin-left: 10px;
+             word-spacing: 3px;
+         }
+         .dot {
+             height: 2px;
+             width: 2px;
+         }
+         #dotslider {
+             bottom: 25px;
+         }
+         .slider_content .onec {
+             margin-top: 30px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 180px;
+             }
+         }
+         .search_label h5 {
+             margin-top: 330px;
+             margin-left: 35px;
+             font-size: 20px;
+         }
+         #myInput {
+             width: 140px;
+             font-size: 5px;
+             padding-left: 20px;
+         }
+         #search {
+             height: 20px;
+             position: relative;
+             top: 28px;
+             left: 100px;
+         }
+         #close {
+             position: relative;
+             left: 120px;
+             top: 7px;
+             font-size: 30px;
+             cursor: pointer;
+         }
+         #myUL {
+             width: 180px;
+         }
+     }
+     
+     @media screen and (max-width:200px) {
+         .preload #load_content {
+             font-size: 22px;
+         }
+         .main {
+             left: 10px;
+         }
+         .nav_logo {
+             height: auto;
+             width: 70px;
+         }
+         .slider_content {
+             word-spacing: 0px;
+             bottom: 110px;
+             font-size: 6px;
+             max-width: 400px;
+             left: 10px;
+         }
+         .slider_content .book_now_btn button {
+             height: 10px;
+             width: 30px;
+             font-size: 3px;
+             margin-top: 5px;
+             margin-left: 60px;
+         }
+         .slider_content .secc {
+             font-size: 5px;
+             max-width: 1000px;
+             margin-top: 0px;
+             line-height: 5px;
+             margin-left: 10px;
+             word-spacing: 3px;
+         }
+         .dot {
+             height: 1px;
+             width: 1px;
+         }
+         #dotslider {
+             bottom: 25px;
+         }
+         .slider_content .onec {
+             margin-top: 0px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 110px;
+             }
+         }
+     }
+     
+     @media screen and (max-width:100px) {
+         .nav_logo {
+             display: none;
+         }
+         .main {
+             left: 30px;
+             font-size: 25px;
+             padding-top: 12px;
+         }
+         .slider_content {
+             word-spacing: 0px;
+             bottom: 110px;
+             font-size: 6px;
+             max-width: 400px;
+             left: 10px;
+         }
+         .slider_content .book_now_btn button {
+             height: 10px;
+             width: 30px;
+             font-size: 3px;
+             margin-top: 5px;
+             margin-left: 60px;
+         }
+         .slider_content .secc {
+             font-size: 5px;
+             max-width: 1000px;
+             margin-top: 0px;
+             line-height: 3px;
+             margin-left: 10px;
+             word-spacing: 3px;
+         }
+         .dot {
+             height: 1px;
+             width: 0px;
+         }
+         #dotslider {
+             bottom: 0px;
+         }
+         .slider_content .onec {
+             margin-top: 0px;
+         }
+         @keyframes vv {
+             from {
+                 position: relative;
+                 bottom: 0px;
+             }
+             to {
+                 bottom: 110px;
+             }
+         }
+     }

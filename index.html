@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---icon-->
+    <link rel="icon" href="./icon.jpg">
+    <!---Css_link-->
+    <link rel="stylesheet" href="./index.css">
+    <!----Font Family link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <!--Iconify icon-->
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    <!---Aos Animation link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!---title website-->
+    <title>BOOOKING ClUB</title>
+</head>
+
+<body>
+    <!----Loader_start--
+    <div class="preload">
+        <div id="load_content">
+            Booking Club
+        </div>
+    </div>-->
+    <!---Loader_End-->
+
+
+    <!---Navbar start-->
+    <div class="navbar_container">
+        <div class="nav_logo">
+            <img src="./nav_logo.jpg" alt="">
+        </div>
+        <div class="nav_label">
+            <label id="">Booking Club</label>
+        </div>
+        <div class="main" onclick="openn()">
+            &#9776;</div>
+        <div class="nav_items">
+            <ul>
+                <li><a id="home" href="Login_page.html" target="_blank">Home <span id="ic" class="iconify"
+              data-icon="codicon:home"></span></a></li>
+                <li><a id="home" href="">Log in <span class="iconify" id="ic" data-icon="entypo:login"></span></a></li>
+                <li><a id="home" href="">Sign Up <span class="iconify" id="ic" data-icon="entypo:new-message"></span></a></li>
+                <li><select onchange="selec()" id="dropdown">
+            <option>Select Genres</option>
+            <option class="dd">Horror</option>
+            <option class="dd">Comedy</option>
+            <option class="dd">Thriller</option>
+            <option class="dd">Fantasy</option>
+            <option class="dd">Action</option>
+            <option class="dd">Romance</option>
+          </select></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!---Toggling navbar start--->
+
+    <div id="menu" class="slidemenu">
+        <a href="">
+      Home <span class="iconify" id="fy" data-icon="codicon:home"></span>
+    </a>
+        <a href="">
+      Log in <span class="iconify" id="fy" data-icon="entypo:login"></span>
+    </a>
+        <a href="">
+      Sign Up <span class="iconify" id="fy" data-icon="entypo:new-message"></span>
+    </a>
+        <a href="#" onclick="closee()" class="closebtn">&times;</a>
+    </div>
+
+    <!--togelling navbar end-->
+    <!--slider start-->
+    <!---Slider 3 images-->
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img src="./cinema_black1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <img src="./cinema_black2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./black3.jpg" style="width:100%">
+        </div>
+
+    </div>
+    <!--Dot symbol in slider-->
+
+    <div id="dotslider" style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <!--slider content-->
+
+    <div class="slider_content">
+        <div class="onec">
+            <p>Welcome to Oursite <span>Booking Club</span></p>
+
+        </div>
+        <div class="secc">
+            <p>To enjoy movies in your <span>F</span>amily, <span>F</span>riends, and <span>R</span>elatives.</p>
+            <br>
+            <p>The <span>B</span>ooking <span>C</span>lub movies tickets books is very easy way</p> <br>
+            <p>Make <span> O</span>ffers and <span>C</span>oupons and <span>G</span>ifts start Your <span>B</span>ooks Now.
+            </p>
+
+        </div>
+        <div class="book_now_btn">
+            <a href="#"> <button>Buy now</button></a>
+
+        </div>
+    </div>
+    <!--slider End-->
+    <!--search Movies start-->
+    <div class="search_container">
+        <div data-aos="fade-right" class="search_label">
+            <h5>Search Movies</h5>
+        </div>
+        <div data-aos="fade-left" class="genres_label">
+            <h5>Your Genres</h5>
+        </div>
+    </div>
+    <div class="bar_container">
+        <div class="movies">
+            <span id="search" class="iconify" data-icon="carbon:search-locate"></span>
+            <label onclick="thebtn()" id="close" href="">&times;</label>
+            <input type="text" onclick="sear()" id="myInput" onkeyup="myFunction()" placeholder="Search for Movie name..." title="Type in a movie name">
+
+
+            <ul id="myUL">
+                <li><a href="#">Adele</a></li>
+                <li><a href="#">Agnes</a></li>
+                <li><a href="./icon.jpg">Billy</a></li>
+                <li><a href="#">Bob</a></li>
+                <li><a href="#">Calvin</a></li>
+                <li><a href="#">Christina</a></li>
+                <li><a href="#">Cindy</a></li>
+                <li><a href="#">Nanban</a></li>
+            </ul>
+        </div>
+        <div class="genres">
+            <input placeholder="Please top select Movies Genres " disabled id="my" type="text">
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+    <!---search Movies end-->
+    <!--<div class="popular_movies_container">
+  <h1 class="Popular">NEW MOVIES</h1>
+  <div class="wrapper">
+    <div class="namelist">
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button>
+      </div>
+      <div class="items">
+        <img class="item_img" src="./main1.jpg" alt="">
+       <span class="item_title">Name:</span>
+        <p class="item_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur earum molestias sint quas minus consequuntur aliquid, iste sequi nam provident aperiam, sit quasi accusantium fugiat? Fuga quia placeat culpa rem.</p>
+        <button class="item_button">Buy Tickets</button
+      </div>
+      
+    </div>
+  </div>
+
+</div>--->
+
+
+
+
+
+    <!-----Javascript_Link-->
+    <script src="./index.js"></script>
+
+
+    <!--<script src="./index.php"></script>-->
+
+</body>
+
+</html>
